@@ -1,0 +1,20 @@
+.modal-inner-cont{
+    display: flex;
+}
+
+.modal-left-part{
+    width: 80%;
+}
+
+.modal-right-part{
+    width: 20%;
+}
+
+.modal-title{
+    display: flex;
+    gap: 20px;
+}
+
+.modal-title p i{
+    color: b6c2cf;
+}

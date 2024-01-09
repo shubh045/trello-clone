@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500&display=swap');
+
+.App{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    flex-grow: 1;
+    min-width: 100vw;
+    height: 100vh;
+}
+
+.add-list{
+    background-color: rgba(209, 124, 174, 0.5);
+    color: #fff;
+    border: 0;
+    width: 250px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 7px;
+    box-shadow: none;
+    font-family: Roboto;
+    font-weight: 500;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.add-list:hover{
+    background-color: #935579;
+}
+
+.add-list > span{
+    height: 100%;
+    font-size: 23px;
+    font-weight: 100;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.add-list-section{
+    width: 250px;
+    background-color: #101204;
+    border-radius: 10px;
+    color: #b6c2cf;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 80px;
+}
+
+.add-list-section > input{
+    width: 93%;
+    padding: 7px;
+    color: #b6c2cf;
+    background-color: #101204;
+    border: none;
+    outline: 2px solid #85b8ff;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.add-btn{
+    background-color: #579DFF;
+    border: none;
+    box-shadow: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.add-btn:hover{
+    background-color: #85b8ff;
+}
+
+.reject-btn{
+    margin-left: 5px;
+    background-color: #101204;
+    color: #b6c2cf;
+    border: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.reject-btn:hover{
+    background-color: #282f27;
+}
