@@ -5,15 +5,16 @@
     gap: 10px;
     align-items: flex-start;
     flex-grow: 1;
-    min-width: 100vw;
+    width: 100vw;
     height: 100vh;
+    overflow-x: scroll;
 }
 
 .add-list{
     background-color: rgba(209, 124, 174, 0.5);
     color: #fff;
     border: 0;
-    width: 250px;
+    min-width: 250px;
     border-radius: 10px;
     font-size: 14px;
     display: flex;
@@ -42,7 +43,7 @@
 }
 
 .add-list-section{
-    width: 250px;
+    min-width: 250px;
     background-color: #101204;
     border-radius: 10px;
     color: #b6c2cf;
@@ -53,6 +54,7 @@
     flex-direction: column;
     gap: 20px;
     min-height: 80px;
+    margin-right: 10px;
 }
 
 .add-list-section > input{

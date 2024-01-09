@@ -6,10 +6,10 @@ import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 
 const App = () => {
   const [addList, setAddList] = useState(false);
-  const [listData, setListData] = useState([]);
+  const [listData, setListData] = useState([{id: 0, title: 'test'}]);
   const [listTitle, setListTitle] = useState("");
   const [openModal, setOpenModal] = useState(false);
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(1);
 
   // const [obj, setObj] = useState({
   //   start: -1,
@@ -69,7 +69,7 @@ const App = () => {
       )}
       <DragDropContext onDragEnd={onDragEnd}>
         <div className="App">
-          <ListCard title="test" setOpenModal={setOpenModal} />
+          {/* <ListCard title="test" setOpenModal={setOpenModal} /> */}
 
           {listData.map((item, index) => (
             <Droppable droppableId={item.id.toString()} key={item.id}>
@@ -79,7 +79,7 @@ const App = () => {
                   ref={provided.innerRef}
                   className="card-list-cont"
                 >
-                  <Draggable draggableId={item.id.toString()} index={index}>
+                  <Draggable draggableId={item.id.toString()} index={index} key={item.id}>
                     {(provided) => (
                       <div
                         ref={provided.innerRef}
