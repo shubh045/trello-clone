@@ -77,7 +77,7 @@ const Navbar = ({ children, expandSide, setExpandSide }) => {
                   <p>
                     <i class="fa-solid fa-user-group"></i>
                   </p>
-                  <button>Board</button>
+                  <button className="board-button">Board</button>
                   <p>
                     <i className="fa-solid fa-angle-down"></i>
                   </p>
@@ -93,18 +93,19 @@ const Navbar = ({ children, expandSide, setExpandSide }) => {
                   <p>
                     <i class="fa-solid fa-bolt-lightning"></i>
                   </p>
-                  <p>
+                  <p className="filters">
                     <i class="fa-solid fa-arrow-down-wide-short"></i>
                     <span>Filters</span>
                   </p>
                   <div className="bottom-r-sub">
-                    <div></div>
-                    <button>
+                    <div className="profile-pic bottom-p-pic">SK</div>
+                    <button className="share-btn">
                       <p>
                         <i className="fa-solid fa-user-plus"></i>
                       </p>
+                      <p>Share</p>
                     </button>
-                    <p>...</p>
+                    <p className="dotted-menu">•••</p>
                   </div>
                 </div>
               </div>

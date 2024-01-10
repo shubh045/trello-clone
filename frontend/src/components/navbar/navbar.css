@@ -1,4 +1,4 @@
-.main-nav, .left-menu, .right-menu, .left-nav-items, .single-item, .trello-icon, .search-container, .bottom-left, .bottom-nav, .bottom-l-menu, .bottom-r-menu, .bottom-r-sub{
+.main-nav, .left-menu, .right-menu, .left-nav-items, .single-item, .trello-icon, .search-container, .bottom-left, .bottom-right, .bottom-nav, .bottom-l-menu, .bottom-r-menu, .bottom-r-sub{
     display: flex;
     align-items: center;
 }
@@ -135,6 +135,8 @@
     justify-content: space-between;
     /* padding: 10px 60px 10px 25px; */
     padding-left: 20px;
+    color: #fff;
+    font-size: 14px;
     /* padding-right: 100px; */
 }
 
@@ -181,8 +183,65 @@
 
 .bottom-r-menu{
     margin-right: 60px;
+    gap: 20px;
+    align-items: center;
 }
 
 .bottom-r-men{
     margin-right: 65px;
+}
+
+.bottom-r-sub{
+    gap: 10px;
+}
+
+.bottom-p-pic{
+    height: 30px;
+    width: 30px;
+}
+
+.board-button{
+    background-color: rgba(255,255,255,0.8);
+    color: #000;
+    border: none;
+    padding: 7px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.board-button:hover, .share-btn:hover{
+    background-color: #fff;
+}
+
+.filters{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.share-btn{
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding: 5px 7px;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    gap: 5px;
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+}
+
+.dotted-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.dotted-menu:hover{
+    background-color: rgba(0, 0, 0, 0.1);
 }
