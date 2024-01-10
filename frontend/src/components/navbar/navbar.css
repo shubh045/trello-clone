@@ -118,16 +118,28 @@
 .bottom-side-nav{
     display: flex;
     height: 100vh;
+    /* width: 100%; */
+    /* margin-right: 60px; */
     overflow-x: hidden;
     overflow-y: hidden;
+}
+
+.navs{
+    width: 100%;
 }
 
 .bottom-nav{
     background-color: rgba(0, 0, 0, 0.2);
     height: 50px;
-    /* width: 100%; */
+    width: 100%;
     justify-content: space-between;
-    padding: 10px 60px 10px 25px;
+    /* padding: 10px 60px 10px 25px; */
+    padding-left: 20px;
+    /* padding-right: 100px; */
+}
+
+.btm-nav{
+    width: 85%;
 }
 
 /* .side{
@@ -164,4 +176,13 @@
 
 .bottom-l-menu{
     gap: 20px;
+    width: 50%;
+}
+
+.bottom-r-menu{
+    margin-right: 60px;
+}
+
+.bottom-r-men{
+    margin-right: 65px;
 }

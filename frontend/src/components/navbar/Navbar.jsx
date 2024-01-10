@@ -67,7 +67,7 @@ const Navbar = ({ children, expandSide, setExpandSide }) => {
             <Sidebar expandSide={expandSide} setExpandSide={setExpandSide} />
           </div>
           <div className="navs">
-            <div className="bottom-nav">
+            <div className={`bottom-nav ${expandSide && "btm-nav"}`}>
               <div className="bottom-left">
                 <div className="bottom-l-menu">
                   <h3>test</h3>
@@ -75,7 +75,7 @@ const Navbar = ({ children, expandSide, setExpandSide }) => {
                     <i className="fa-regular fa-star"></i>
                   </p>
                   <p>
-                    <i className="fa-light fa-user-group"></i>
+                    <i class="fa-solid fa-user-group"></i>
                   </p>
                   <button>Board</button>
                   <p>
@@ -84,7 +84,9 @@ const Navbar = ({ children, expandSide, setExpandSide }) => {
                 </div>
               </div>
               <div className="bottom-right">
-                <div className="bottom-r-menu">
+                <div
+                  className={`bottom-r-menu ${expandSide && "bottom-r-men"}`}
+                >
                   <p>
                     <i class="fa-solid fa-rocket"></i>
                   </p>
@@ -92,7 +94,7 @@ const Navbar = ({ children, expandSide, setExpandSide }) => {
                     <i class="fa-solid fa-bolt-lightning"></i>
                   </p>
                   <p>
-                  <i class="fa-solid fa-arrow-down-wide-short"></i>
+                    <i class="fa-solid fa-arrow-down-wide-short"></i>
                     <span>Filters</span>
                   </p>
                   <div className="bottom-r-sub">
