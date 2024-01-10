@@ -1,152 +1,169 @@
-.main-nav, .left-menu, .right-menu, .left-nav-items, .single-item, .trello-icon, .search-container, .bottom-left, .bottom-right, .bottom-nav, .bottom-l-menu, .bottom-r-menu, .bottom-r-sub, .left-heading, .sidebar-heading{
-    display: flex;
-    align-items: center;
+.main-nav,
+.left-menu,
+.right-menu,
+.left-nav-items,
+.single-item,
+.trello-icon,
+.search-container,
+.bottom-left,
+.bottom-right,
+.bottom-nav,
+.bottom-l-menu,
+.bottom-r-menu,
+.bottom-r-sub,
+.left-heading,
+.sidebar-heading,
+.workspace-settings,
+.members,
+.boards-list-heading {
+  display: flex;
+  align-items: center;
 }
 
-.main-nav{
-    justify-content: space-between;
-    background-color: #1d2125;
-    color: #b6c2cf;
-    height: 55px;
-    padding: 0 15px;
-    border-bottom: 1px solid #282e32;
+.main-nav {
+  justify-content: space-between;
+  background-color: #1d2125;
+  color: #b6c2cf;
+  height: 55px;
+  padding: 0 15px;
+  border-bottom: 1px solid #282e32;
 }
 
-.left-menu{
-    gap: 30px;
+.left-menu {
+  gap: 30px;
 }
 
-.left-nav-items{
-    gap: 10px;
+.left-nav-items {
+  gap: 10px;
 }
 
-.single-item{
-    gap: 5px;
-    font-size: 14px;
-    height: 30px;
-    /* justify-content: center; */
-    padding: 1px 12px;
-    cursor: pointer;
-    border-radius: 5px;
+.single-item {
+  gap: 5px;
+  font-size: 14px;
+  height: 30px;
+  /* justify-content: center; */
+  padding: 1px 12px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.single-item:hover{
-    background-color: #333c43;
+.single-item:hover {
+  background-color: #333c43;
 }
 
-.search-container{
-    position: relative;
+.search-container {
+  position: relative;
 }
 
-.search-container > input{
-    height: 20px;
-    width: 200px;
-    padding: 5px 7px;
-    background-color: #282e32;
-    border-radius: 5px;
-    border: none;
-    color: #b6c2cf;
-    padding-left: 35px;
-    font-size: 14px;
+.search-container > input {
+  height: 20px;
+  width: 200px;
+  padding: 5px 7px;
+  background-color: #282e32;
+  border-radius: 5px;
+  border: none;
+  color: #b6c2cf;
+  padding-left: 35px;
+  font-size: 14px;
 }
 
-.search-container > input:focus{
-    width: 700px;
-    outline: 2px solid #85b8ff;
+.search-container > input:focus {
+  width: 700px;
+  outline: 2px solid #85b8ff;
 }
 
-.search-container > p i{
-    position: absolute;
-    /* margin-left: 70px; */
-    top: 0;
-    margin-left: 10px;
-    margin-top: 9px;
-    font-size: 14px;
+.search-container > p i {
+  position: absolute;
+  /* margin-left: 70px; */
+  top: 0;
+  margin-left: 10px;
+  margin-top: 9px;
+  font-size: 14px;
 }
 
-.nav-create-button{
-    background-color: #579DFF;
-    border: none;
-    box-shadow: none;
-    padding: 7px 10px;
-    border-radius: 3px;
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 14px;
-    cursor: pointer;
-    font-family: Roboto;
-    font-weight: 500;
+.nav-create-button {
+  background-color: #579dff;
+  border: none;
+  box-shadow: none;
+  padding: 7px 10px;
+  border-radius: 3px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: Roboto;
+  font-weight: 500;
 }
 
-.nav-create-button:hover{
-    background-color: #85b8ff;
+.nav-create-button:hover {
+  background-color: #85b8ff;
 }
 
-.trello-icon{
-    gap: 5px;
-    font-size: 18px;
-    font-family: Roboto;
+.trello-icon {
+  gap: 5px;
+  font-size: 18px;
+  font-family: Roboto;
 }
 
-.trello-icon > h3{
-    letter-spacing: 1px;
+.trello-icon > h3 {
+  letter-spacing: 1px;
 }
 
-.right-menu{
-    gap: 15px;
+.right-menu {
+  gap: 15px;
 }
 
-.profile-pic{
-    width: 23px;
-    height: 23px;
-    border-radius: 50%;
-    background-color: green;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
+.profile-pic {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: green;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
 }
 
-.sidebar-container{
-    height: 100vh;
-    width: 18px;
+.sidebar-container {
+  height: 100vh;
+  width: 18px;
 }
 
-.sidebar{
-    position: relative;
-    height: 101vh;
-    width: 18px;
-    background-color: #101204;
+.sidebar {
+  position: relative;
+  height: 101vh;
+  width: 18px;
+  background-color: #211d24;
 }
 
-.bottom-side-nav{
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    /* margin-right: 60px; */
-    overflow-x: hidden;
-    overflow-y: hidden;
+.bottom-side-nav {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  /* margin-right: 60px; */
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-.navs{
-    width: 100%;
+.navs {
+  width: 100%;
 }
 
-.bottom-nav{
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 50px;
-    width: 100%;
-    justify-content: space-between;
-    /* padding: 10px 60px 10px 25px; */
-    padding-left: 20px;
-    color: #fff;
-    font-size: 14px;
-    /* padding-right: 100px; */
+.bottom-nav {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 50px;
+  width: 100%;
+  justify-content: space-between;
+  /* padding: 10px 60px 10px 25px; */
+  padding-left: 20px;
+  color: #fff;
+  font-size: 14px;
+  /* padding-right: 100px; */
 }
 
-.btm-nav{
-    width: 85%;
+.btm-nav {
+  width: 85%;
 }
 
 /* .side{
@@ -154,171 +171,298 @@
     height: 100%;
 } */
 
-.expand-arrow{
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 2px solid #282e32;
-    background-color: #101204;
-    left: 5px;
-    color: #b6c2cf;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: -2px;
+.expand-arrow {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid #282e32;
+  background-color: #101204;
+  left: 5px;
+  color: #b6c2cf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -2px;
 }
 
-.expand-arrow i{
-    font-size: 12px;
+.expand-arrow i {
+  font-size: 12px;
 }
 
-.expanded{
-    width: 250px;
+.expanded {
+  width: 250px;
 }
 
-.bottom-l-menu h3{
-    margin: 0;
+.bottom-l-menu h3 {
+  margin: 0;
 }
 
-.bottom-l-menu{
-    gap: 20px;
-    width: 50%;
+.bottom-l-menu {
+  gap: 20px;
+  width: 50%;
 }
 
-.bottom-r-menu{
-    margin-right: 60px;
-    gap: 20px;
-    align-items: center;
+.bottom-r-menu {
+  margin-right: 60px;
+  gap: 20px;
+  align-items: center;
 }
 
-.bottom-r-men{
-    margin-right: 65px;
+.bottom-r-men {
+  margin-right: 65px;
 }
 
-.bottom-r-sub{
-    gap: 10px;
+.bottom-r-sub {
+  gap: 10px;
 }
 
-.bottom-p-pic{
-    height: 30px;
-    width: 30px;
+.bottom-p-pic {
+  height: 30px;
+  width: 30px;
 }
 
-.board-button{
-    background-color: rgba(255,255,255,0.8);
-    color: #000;
-    border: none;
-    padding: 7px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
+.board-button {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  border: none;
+  padding: 7px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.board-button:hover, .share-btn:hover{
-    background-color: #fff;
+.board-button:hover,
+.share-btn:hover {
+  background-color: #fff;
 }
 
-.filters{
-    display: flex;
-    gap: 5px;
-    align-items: center;
+.filters {
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 
-.share-btn{
-    display: flex;
-    height: 30px;
-    align-items: center;
-    padding: 5px 7px;
-    border: none;
-    border-radius: 5px;
-    width: 80px;
-    gap: 5px;
-    background-color: rgba(255,255,255,0.8);
-    cursor: pointer;
+.share-btn {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  padding: 5px 7px;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+  gap: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
 }
 
-.dotted-menu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
+.dotted-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
-.dotted-menu:hover{
-    background-color: rgba(0, 0, 0, 0.1);
+.dotted-menu:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.left-heading{
-    margin-top: 0;
+.left-heading {
+  margin-top: 0;
 }
 
-.sidebar-inner-container{
-    height: 100%;
-    width: 100%;
-    color: #b6c2cf;
-    margin-top: -16px;
+.sidebar-inner-container {
+  height: 100%;
+  width: 100%;
+  color: #b6c2cf;
+  margin-top: -16px;
 }
 
-.sidebar-heading{
+.sidebar-heading {
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-top: 15px;
+  border-bottom: 1px solid #282e32;
+  color: #fff;
+  padding-right: 15px;
+  padding-left: 10px;
+}
+
+.left-heading {
+  color: #b6c2cf;
+}
+
+.t-icon {
+  background: linear-gradient(#00875a, #006644);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+  font-weight: 600;
+  color: #000;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.trello-workspace {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-left: 10px;
+  line-height: 20px;
+}
+
+.trello-workspace span {
+  font-size: 14px;
+}
+
+.trello-workspace span:not(:last-child) {
+  cursor: pointer;
+}
+
+.shrink-side {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.shrink-side:hover {
+  background-color: #3a3a45;
+}
+
+.general-menu {
+  margin-top: 20px;
+}
+
+.g-left-items,
+.table,
+.calendar {
+  /* margin-bottom: 15px; */
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.table,
+.calendar {
+  width: 240px;
+  font-style: italic;
+}
+
+.boards-item p {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.members,
+.workspace-settings {
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 235px;
+}
+
+.members,
+.workspace-settings {
+  padding-left: 15px;
+}
+
+.members > i,
+.workspace-settings > i,
+.boards-list-heading > p {
+  margin-right: 10px;
+}
+
+.members {
+  margin-bottom: 10px;
+}
+
+.workspace-settings {
+  margin-bottom: 25px;
+}
+
+.boards-item {
+  width: 235px;
+  height: 30px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.boards-item:hover,
+.members:hover,
+.workspace-settings:hover,
+.table:hover,
+.calendar:hover {
+  background-color: #454147;
+  cursor: pointer;
+}
+
+.workspace-views {
+  font-size: 14px;
+}
+
+.workspace-vw,
+.table,
+.calendar, .boards-list-heading {
+  padding-left: 10px;
+}
+
+.boards-list-heading{
     justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    margin-top: 15px;
-    border-bottom: 1px solid #282e32;
-    color: #fff;
-    padding-right: 15px;
-    padding-left: 10px;
+    font-size: 14px;
+    margin-top: 20px;
+    height: 30px;
 }
 
-.left-heading{
-    color: #b6c2cf;
-}
-
-.t-icon{
-    background: linear-gradient(#00875a, #006644);
-    width: 32px;
-    height: 32px;
+.boards-list-heading > p{
+    width: 25px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Roboto;
-    font-weight: 600;
-    color: #000;
-    font-size: 20px;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 2px;
 }
 
-.trello-workspace{
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    margin-left: 10px;
-    line-height: 20px;
+.boards-list-heading > p:hover{
+    background-color: #373842;
 }
 
-.trello-workspace span{
-    font-size: 14px;
-}
-
-.trello-workspace span:not(:last-child){
-    cursor: pointer;
-}
-
-.shrink-side{
-    width: 30px;
+.single-board{
+    width: 240px;
     height: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
+    padding-left: 10px;
+    background-color: rgba(173, 167, 176, 0.5);
     cursor: pointer;
-    border-radius: 3px;
-    font-size: 14px;
 }
 
-.shrink-side:hover{
-    background-color: #3a3a45;
+.single-board:hover{
+    background-color: rgb(69, 65, 71);
+}
+
+.board-color{
+    width: 25px;
+    height: 25px;
+    background-color: #8f3f66;
+    border-radius: 2px;
 }
