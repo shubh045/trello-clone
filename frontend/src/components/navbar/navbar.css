@@ -1,11 +1,11 @@
-.main-nav, .left-menu, .right-menu, .left-nav-items, .single-item, .trello-icon, .search-container, .bottom-left, .bottom-right, .bottom-nav, .bottom-l-menu, .bottom-r-menu, .bottom-r-sub{
+.main-nav, .left-menu, .right-menu, .left-nav-items, .single-item, .trello-icon, .search-container, .bottom-left, .bottom-right, .bottom-nav, .bottom-l-menu, .bottom-r-menu, .bottom-r-sub, .left-heading, .sidebar-heading{
     display: flex;
     align-items: center;
 }
 
 .main-nav{
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #1d2125;
     color: #b6c2cf;
     height: 55px;
     padding: 0 15px;
@@ -108,9 +108,14 @@
     font-size: 12px;
 }
 
+.sidebar-container{
+    height: 100vh;
+    width: 18px;
+}
+
 .sidebar{
     position: relative;
-    height: 100vh;
+    height: 101vh;
     width: 18px;
     background-color: #101204;
 }
@@ -118,7 +123,7 @@
 .bottom-side-nav{
     display: flex;
     height: 100vh;
-    /* width: 100%; */
+    width: 100%;
     /* margin-right: 60px; */
     overflow-x: hidden;
     overflow-y: hidden;
@@ -244,4 +249,76 @@
 
 .dotted-menu:hover{
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.left-heading{
+    margin-top: 0;
+}
+
+.sidebar-inner-container{
+    height: 100%;
+    width: 100%;
+    color: #b6c2cf;
+    margin-top: -16px;
+}
+
+.sidebar-heading{
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-top: 15px;
+    border-bottom: 1px solid #282e32;
+    color: #fff;
+    padding-right: 15px;
+    padding-left: 10px;
+}
+
+.left-heading{
+    color: #b6c2cf;
+}
+
+.t-icon{
+    background: linear-gradient(#00875a, #006644);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-weight: 600;
+    color: #000;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.trello-workspace{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+.trello-workspace span{
+    font-size: 14px;
+}
+
+.trello-workspace span:not(:last-child){
+    cursor: pointer;
+}
+
+.shrink-side{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.shrink-side:hover{
+    background-color: #3a3a45;
 }

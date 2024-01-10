@@ -1,11 +1,28 @@
-
-const Sidebar = ({expandSide, setExpandSide}) => {
-    
+const Sidebar = ({ expandSide, setExpandSide }) => {
   return (
-    <div className={`sidebar ${expandSide && 'expanded'}`}>
-        {!expandSide && <p className='expand-arrow' onClick={() => setExpandSide(true)}><i className="fa-solid fa-angle-right"></i></p>}
+    <div className={`sidebar ${expandSide && "expanded"}`}>
+      {!expandSide && (
+        <p className="expand-arrow" onClick={() => setExpandSide(true)}>
+          <i className="fa-solid fa-angle-right"></i>
+        </p>
+      )}
+      {expandSide && (
+        <div className="sidebar-inner-container">
+          <div className="sidebar-heading">
+            <div className="left-heading">
+              <p className="t-icon">T</p>
+              <p className="trello-workspace">
+                <span>Trello Workspace</span> <span>Free</span>
+              </p>
+            </div>
+            <p className="shrink-side">
+              <i className="fa-solid fa-angle-left"></i>
+            </p>
+          </div>
+        </div>
+      )}
     </div>
-  )
-}
+  );
+};
 
 export default Sidebar;
