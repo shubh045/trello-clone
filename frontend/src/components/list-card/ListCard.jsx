@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import "./list.css";
 import ItemCard from "../item-card/ItemCard";
+import { Draggable } from "react-beautiful-dnd";
 
 const ListCard = ({
   title,
@@ -19,8 +20,8 @@ const ListCard = ({
   const [itemTitle, setItemTitle] = useState("");
   const [counter, setCounter] = useState(0);
 
-  const dragList = useRef();
-  const dragOverList = useRef();
+  // const dragList = useRef();
+  // const dragOverList = useRef();
 
   // const dragStart = (e) => {
   //   dragList.current = e.target.id;
@@ -73,12 +74,22 @@ const ListCard = ({
         </div>
 
         <ul className="items">
-          {items.map((itm) => (
-            <ItemCard
-              itemTitle={itm.title}
-              key={itm.id}
-              setOpenModal={setOpenModal}
-            />
+          {items.map((itm, index) => (
+            // <Draggable draggableId={itm.id.toString()} key={itm.id} index={index}>
+            //   {(provided) => (
+                <div
+                  // ref={provided.innerRef}
+                  // {...provided.draggableProps}
+                  // {...provided.dragHandleProps}
+                >
+                  <ItemCard
+                    itemTitle={itm.title}
+                    key={itm.id}
+                    setOpenModal={setOpenModal}
+                  />
+                </div>
+            //   )}
+            // </Draggable>
           ))}
         </ul>
 

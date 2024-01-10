@@ -3,6 +3,7 @@ import ListCard from "./components/list-card/ListCard";
 import { useEffect, useState } from "react";
 import Modal from "./components/modal/Modal";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
+import Navbar from "./components/navbar/Navbar";
 
 const App = () => {
   const [addList, setAddList] = useState(false);
@@ -10,6 +11,7 @@ const App = () => {
   const [listTitle, setListTitle] = useState("");
   const [openModal, setOpenModal] = useState(false);
   const [counter, setCounter] = useState(1);
+  const [expandSide, setExpandSide] = useState(false)
 
   // const [obj, setObj] = useState({
   //   start: -1,
@@ -67,6 +69,7 @@ const App = () => {
           </div>
         </div>
       )}
+      <Navbar expandSide={expandSide} setExpandSide={setExpandSide}>
       <DragDropContext onDragEnd={onDragEnd}>
         <div className="App">
           {/* <ListCard title="test" setOpenModal={setOpenModal} /> */}
@@ -141,7 +144,9 @@ const App = () => {
             </div>
           )}
         </div>
+        
       </DragDropContext>
+      </Navbar>
     </>
   );
 };
